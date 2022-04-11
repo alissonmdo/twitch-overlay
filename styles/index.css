@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #141824;
+}
+
+.list {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 5px;
+  transition: ease-in-out 500ms all;
+  justify-content: end;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181b24;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333e5c;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #526392;
+}
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(123, 123, 123, 0.297);
+  transition: ease-in-out 300ms all;
+  max-height: 500px;
+}
+.card-header {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-weight: 550;
+}
+.card-content {
+  margin-top: 15px;
+  color: #ededed;
+}
+.card-avatar {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.zero-height {
+  /* max-height: 0; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 2rem;
+}
